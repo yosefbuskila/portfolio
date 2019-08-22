@@ -1,0 +1,72 @@
+.cont {
+    display: grid;
+    grid-template-columns: 300px 0 1fr;
+}
+
+menu img {
+    width: 150px;
+    height: 150px;
+    margin-right: 50px;
+}
+
+menu {
+    background: rgb(242, 243, 247);
+    margin: 0;
+    padding: 0 20px;
+    height: 100vh;
+    display: grid;
+    overflow-y: auto;
+}
+
+menu * {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 75px;
+}
+
+h3 {
+    color: rgb(89, 89, 92)
+}
+
+menu a.link {
+    color: rgb(44, 152, 240);
+    /* margin-top: 0; */
+}
+
+menu a {
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 0;
+    /* position: relative; */
+    font-family: Quicksand, Arial, sans-serif;
+    text-decoration: none;
+    /* padding: 10px 0px; */
+    /* transition: all 0.3s ease 0s; */
+    /* text-decoration: underline rgb(44, 152, 240); */
+    width: auto;
+    margin: 8px auto;
+    padding: 0 5px 3px 0;
+}
+
+a:hover {
+    border-bottom: rgb(44, 152, 240) solid 1px;
+    /* color: rgb(44, 152, 240); */
+}
+
+menu a:active {
+    /* border: solid rgb(44, 152, 240) 1px; */
+    color: rgb(44, 152, 240);
+}
+
+menu a.activeLink {
+    border-bottom: rgb(44, 152, 240) solid 1px;
+    color: rgb(44, 152, 240);
+}
+
+menu .linkedButtom {
+    margin-bottom: 0;
+}
+
+menu .linkedTop {
+    margin-top: 0;
+}

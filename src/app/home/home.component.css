@@ -1,0 +1,28 @@
+.contCont {
+    display: grid;
+}
+
+div.cont {
+    margin: 50px auto;
+    width: auto;
+}
+
+.eng {
+    direction: ltr;
+}
+
+h3,
+h4,
+ul {
+    color: rgb(89, 89, 92)
+}
+
+h1,
+h2 {
+    font-size: 2em;
+}
+
+* {
+    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: Quicksand, Arial, sans-serif;
+}
