@@ -1,19 +1,23 @@
 <div class="contCont">
     <div class="cont">
-        <h1>שלום!</h1>
-        <h2>אני יוסף בוסקילה</h2>
-        <h3>מפתח WEB</h3>
+        <h1>היי! <br> אני יוסף בוסקילה</h1>
+        <h2>מפתח WEB</h2>
         <h3>מומחה בסביבות פיתוח: </h3>
-        <h3 class="eng">angular8, nodeJS, express, mySql, mongoDB, html, css, java script.</h3>
-        <h4 class="eng">php, Microsoft access, excel, java, git, android, Microsoft Azure.</h4>
+        <h3 class="eng">
+            <li *ngFor="let item of list1">{{item}}</li>
+        </h3>
+        <hr>
+        <h4 class="eng">
+            <li *ngFor="let item of list2">{{item}}</li>
+        </h4>
         <h3> <a routerLink='/portfolio'> כאן תוכלו לראות ולהתרשם מעבודות שביצעתי</a></h3>
         <h3>יש לי ידע בתכנות כfull stack.</h3>
         <h3> בניתי את המערכות הללו מקצה לקצה כולל:</h3>
-        <ul>
-            <li>server.</li>
-            <li>db.</li>
-            <li>client.</li>
-            <li>אפיון.</li>
+        <ul class="eng">
+            <li>server</li>
+            <li>db</li>
+            <li>client</li>
+            <li>אפיון</li>
         </ul>
     </div>
 

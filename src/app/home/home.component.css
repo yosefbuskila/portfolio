@@ -1,4 +1,5 @@
 .contCont {
+    margin-top: 50px;
     display: grid;
 }
 
@@ -11,18 +12,39 @@ div.cont {
     direction: ltr;
 }
 
+h1,
+h2 {
+    margin: 0;
+}
+
 h3,
 h4,
 ul {
     color: rgb(89, 89, 92)
 }
 
-h1,
-h2 {
-    font-size: 2em;
+h1 {
+    font-size: 2.5em;
+}
+
+h3.eng,
+h4.eng {
+    display: grid;
+    /* width: 900px; */
+    /* grid-template-rows: repeat(3, 20px); */
+    grid-template-columns: repeat(3, 170px);
 }
 
 * {
     /* font-family: 'Courier New', Courier, monospace; */
     font-family: Quicksand, Arial, sans-serif;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+}
+
+ul li {
+    font-size: 20px;
 }
