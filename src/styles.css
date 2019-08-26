@@ -9,6 +9,7 @@ body {
 
 div.contWork {
     display: grid;
+    padding-top: 30px;
 }
 
 .contImages {
@@ -21,7 +22,7 @@ div.contWork {
 img.exampleImg {
     max-width: 98%;
     /* width: fit-content; */
-    margin: 10px auto;
+    margin: auto;
 }
 
 img.exampleImg:hover {
@@ -73,6 +74,34 @@ img.xImg:active {
 .contWork a {
     margin-top: 15px;
     font-size: 20px;
+}
+
+.nextBTN,
+.backBTN {
+    border: none;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* color: rgb(181, 177, 190); */
+    /* font-size: 25px; */
+    position: absolute;
+    font-size: 40px;
+    top: 40%
+}
+
+.nextBTN {
+    left: 10px;
+}
+
+.backBTN {
+    right: 10px;
+}
+
+.nextBTN:hover,
+.backBTN:hover {
+    background: rgb(105, 118, 196);
+    border-color: white;
+    color: white;
 }
 
 

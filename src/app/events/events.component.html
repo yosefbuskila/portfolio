@@ -14,12 +14,8 @@
         <br>
     </p>
     <a href="https://hidabrut-5458.nodechef.com" class="link" target="_blank">תוכלו להתחבר כאן למערכת דמו של ניהול האירועים</a>
-    <a routerLink='/events'>וכאן לעמוד העבודה המורחב</a>
+    <br>
+    <!-- <a routerLink='/events'>וכאן לעמוד העבודה המורחב</a> -->
 
-    <div class="contImages">
-        <div *ngFor="let image of images; let i=index" (click)="selected=''" [class.selected]="selected==image" [class.first]="i==0">
-            <img *ngIf="selected==image" src="assets/x.png" alt="" class="xImg" (click)="selected=''; $event.stopImmediatePropagation();">
-            <img class="exampleImg" src="assets/{{image}}" alt="events" (click)="selected=image; $event.stopImmediatePropagation();">
-        </div>
-    </div>
+    <app-images [images]="['events.PNG','eventSmartPhone.PNG','eventSmartPhone2.PNG','manage.PNG']"></app-images>
 </div>

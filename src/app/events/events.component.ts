@@ -6,26 +6,16 @@ import { Component, OnInit, HostListener, Input } from '@angular/core';
   styleUrls: ['./events.component.css']
 })
 export class EventsComponent implements OnInit {
-  @Input() limited;
-  selected='';
+  // @Input() limited;
+  selected=-1;
   images:string[]=['events.PNG','eventSmartPhone.PNG','eventSmartPhone2.PNG','manage.PNG']
-  constructor() {
-    // this.expanded=this.expanded||true;
-    // console.log('limited',this.limited)
-   }
+  constructor() {   }
   
   @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(event: KeyboardEvent) {
     if (event.keyCode === 27) {
-      this.selected='';
+      this.selected=-1;
   }
 }
-  // onX(event){
-  //   this.selected='';
-  //   event.stopImmediatePropagation();
-  // }
-  // onSelect(img){
-  //   this.selected=img;
-  // }
   ngOnInit() {
   }
 

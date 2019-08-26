@@ -1,0 +1,8 @@
+<div class="contImages">
+    <div *ngFor="let image of images; let i=index" (click)="selected=-1" [class.selected]="selected==i" [class.first]="i==0">
+        <button *ngIf="selected==i && i!=0" class="backBTN" title='הקודם' (click)="selected=selected-1; $event.stopImmediatePropagation();">&lt;</button>
+        <img *ngIf="selected==i" src="assets/x.png" alt="" class="xImg" (click)="selected=-1; $event.stopImmediatePropagation();">
+        <img class="exampleImg" src="assets/{{image}}" alt="events" (click)="selected=i; $event.stopImmediatePropagation();">
+        <button *ngIf="selected==i && i<images.length-1" class="nextBTN" title='הבא' (click)="selected=selected+1; $event.stopImmediatePropagation();">&gt;</button>
+    </div>
+</div>
