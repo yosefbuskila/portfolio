@@ -1,0 +1,81 @@
+.nextBTN,
+.backBTN {
+    border: none;
+    background: white;
+    border: 2px solid black;
+    border-radius: 20px;
+    /* color: rgb(181, 177, 190); */
+    /* font-size: 25px; */
+    position: absolute;
+    font-size: 40px;
+    top: 40%
+}
+
+.nextBTN {
+    left: 10px;
+}
+
+.backBTN {
+    right: 10px;
+}
+
+.nextBTN:hover,
+.backBTN:hover {
+    background: rgb(105, 118, 196);
+    border-color: white;
+    color: white;
+}
+
+.contImages {
+    /* width: 500px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+img.exampleImg {
+    max-width: 98%;
+    margin: 10px;
+}
+
+img.exampleImg:hover {
+    border: dashed black 1px;
+}
+
+.selected img.exampleImg {
+    border: solid black 3px;
+    max-height: 98%;
+    margin: auto;
+    /* width: auto; */
+}
+
+div.selected {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0px auto;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    width: 100%;
+    height: 100%;
+}
+
+img.xImg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+img.xImg:hover {
+    border: 2px solid black;
+}
+
+img.xImg:active {
+    border: 3px solid rgb(84, 3, 87);
+}

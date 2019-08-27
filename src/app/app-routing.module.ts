@@ -4,12 +4,14 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EventsComponent } from './events/events.component';
 import { AptComponent } from './apt/apt.component';
+import { TipulComponent } from './tipul/tipul.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent},
   { path: 'portfolio', component: PortfolioComponent},
   { path: 'events', component: EventsComponent},
   { path: 'apt', component: AptComponent},
+  { path: 'tipul', component: TipulComponent},
   { path: '',  redirectTo: 'portfolio',  pathMatch: 'full'},
 ];
 

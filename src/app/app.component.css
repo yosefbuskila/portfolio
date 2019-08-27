@@ -1,6 +1,8 @@
 .cont {
-    display: grid;
-    grid-template-columns: 300px 0 1fr;
+    margin-right: 350px;
+    max-height: 99vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 menu img {
@@ -11,12 +13,17 @@ menu img {
 
 menu {
     background: rgb(242, 243, 247);
-    margin: 0 0 0 50px;
+    margin: 0;
     padding: 0 20px;
     /* height: 100vh; */
     display: grid;
     overflow-y: auto;
     grid-auto-rows: max-content;
+    position: fixed;
+    width: 260px;
+    right: 0;
+    top: 0;
+    bottom: 0;
 }
 
 menu * {

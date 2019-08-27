@@ -8,6 +8,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { EventsComponent } from './events/events.component';
 import { AptComponent } from './apt/apt.component';
 import { ImagesComponent } from './inages/images.component';
+import { TipulComponent } from './tipul/tipul.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ImagesComponent } from './inages/images.component';
     PortfolioComponent,
     EventsComponent,
     AptComponent,
-    ImagesComponent
+    ImagesComponent,
+    TipulComponent
   ],
   imports: [
     BrowserModule,
