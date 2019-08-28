@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  list1=['angular8', 'nodeJS', 'express', 'mySql', 'mongoDB', 'html', 'css', 'java script'];
-  list2=['php', 'Microsoft access', 'excel', 'java', 'git', 'android', 'Microsoft Azure']
+  list1=['Angular8', 'NodeJS', 'Express', 'MySql', 'MongoDB', 'Html', 'CSS', 'Java script'];
+  list2=['Php', 'Microsoft access', 'Excel', 'Java', 'Git', 'Android', 'Microsoft Azure']
   constructor() { }
 
   ngOnInit() {
